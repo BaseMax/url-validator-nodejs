@@ -13,8 +13,11 @@ const has = (text) => {
 };
 
 // Return true if the input text includes the URL address
-const includes = (text, email) => {
-    return match(text).includes(email);
+const includes = (text, url) => {
+    const matches = match(text);
+
+    if (!matches) return false;
+    return matches.includes(url);
 };
 
 // Return true if the input text match only one URL address without any other characters or whitespaces
