@@ -1,7 +1,5 @@
 const url_validator = require("./url-validator");
 
-console.log(url_validator);
-
 // Test match function
 console.log(url_validator.match("https://google.com/first/second/third and site.com/test"));
 
